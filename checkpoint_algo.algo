@@ -1,0 +1,17 @@
+ALGORITHM checkpoint_ALGO
+VAR
+    nbreOfChar:=1
+    nbrOfWord:=0
+    nbrOfVowel:=0 
+    ch:=''
+    i:=0
+BEGIN
+    WHILE (ch[i]=='.') DO
+        nbreOfChar++
+        IF (ch[i] in ['a','e','i','u','o']) THEN
+            nbrOfVowel++
+        ELSE_IF (ch[i] == ' ') THEN
+            nbrOfWord++
+        END_IF
+    END_WHILE
+END
